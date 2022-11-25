@@ -4,7 +4,8 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import Header from './header/header.component';
+import Header from './component/header/header.component';
+import SingInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 const HatsPage = () => {
   // let location = useLocation();
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='shop/' element={<ShopPage />} />
+        <Route path='signin/' element={<SingInAndSignUpPage />} />
       </Routes>
     </div>
   );
