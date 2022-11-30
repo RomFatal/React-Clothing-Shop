@@ -17,9 +17,11 @@
       align-items: center;
       justify-content: flex-end;
       padding-left: 20%;
+      white-space: nowrap;
   
       .option {
         padding: 10px 15px;
+        cursor: pointer;
       }
     }
   }

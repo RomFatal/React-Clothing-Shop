@@ -1,9 +1,17 @@
 .sign-in{
-    width: 45%;
+    // width: 50%;
     display: flex;
     flex-direction: column;
-
+    font-size: larger;
+    text-align: center;
     .title{
         margin: 10px 0;
+    }
+
+    .buttons{
+        font-size: 1px !important;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 }
