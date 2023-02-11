@@ -3,7 +3,7 @@ body{
     padding: 20px 60px;
     font-weight: lighter;
     background-attachment: fixed; 
-    background-image:  linear-gradient(to bottom, rgba(157, 99, 0, 0.623), rgba(222, 222, 222, 0.794),rgba(0, 146, 195, 0.673));
+    background-image:   linear-gradient(200deg, #EADEDB 0%, #7092bcb5 50%, #9541d635 75%)
   }   
 
 a{
