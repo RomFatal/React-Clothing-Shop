@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { auth } from "../../firebase/firebase.utils";
-import CartIcon from '../cart-icon/cart-icon.componnet'
-import CartDropdown from "../cart-dropdown/cart-dropdown.componnet";
+import CartIcon from '../cart-icon/cart-icon.component'
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { ReactComponent as Logo } from '../../assets/084 crown.svg';
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { selectCartHidden } from "../../redux/cart/cart.selector";
