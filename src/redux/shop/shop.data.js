@@ -16,7 +16,7 @@ const SHOP_DATA = { SHOP_DATA:[
         imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
         price: 18
       },
-      {
+       {
         id: 3,
         name: 'Brown Cowboy',
         imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
