@@ -8,7 +8,7 @@ const MenuItem = ({ title, imageUrl, size, linkUrl }) => {
     const navigate = useNavigate();    
     //console.log("*location*:",location,"\n *navigate*:",navigate,"\n *params*:",params)
     return(
-    <div className={`${size} menu-item`} onClick={() => navigate(`${location.pathname}shop`)}>
+    <div className={`${size} menu-item`} onClick={() => navigate(`${location.pathname}${linkUrl}`)}>
         <div className="background-image" style={{ backgroundImage: `url(${imageUrl})` }} />
         <div className="content">
             <h1 className="title">{title.toUpperCase()}</h1>

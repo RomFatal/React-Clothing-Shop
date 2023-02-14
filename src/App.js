@@ -10,7 +10,7 @@ import ShopPage from './pages/shop/shop.component';
 import Header from './component/header/header.component';
 import SingInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckOutPage from './pages/checkout/checkout.component';
-
+import CollectionPage from './pages/collection/collection.component';
 import { selectCurrentUser } from './redux/user/user.selector';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.action';
@@ -46,9 +46,10 @@ class App extends React.Component {
         <Header />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/shop' element={<ShopPage />} />
-          <Route path='/sign-in' element={this.props.currentUser ? (<Navigate  to='/'/>) : (<SingInAndSignUpPage />)} />
-          <Route path='/checkout'  exact element={<CheckOutPage />} />
+          <Route path='/shop' element={<ShopPage />}/>
+          <Route path='/shop/:collectionId' element={<CollectionPage />} />
+          <Route path='sign-in' element={this.props.currentUser ? (<Navigate  to='/'/>) : (<SingInAndSignUpPage />)} />
+          <Route path='checkout'  exact element={<CheckOutPage />} />
         </Routes>
       </div>
     );
